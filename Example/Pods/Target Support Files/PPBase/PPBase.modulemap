@@ -1,0 +1,6 @@
+framework module PPBase {
+  umbrella header "PPBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

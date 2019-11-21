@@ -7,6 +7,7 @@
 //
 
 #import "DViewController.h"
+#import "PPCircularView.h"
 
 @interface DViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    PPCircularView *view = [PPCircularView new];
+    view.backgroundColor = [UIColor cyanColor];
+    view.frame = CGRectMake(200, 200, 100, 100);
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning
